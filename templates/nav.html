@@ -1,0 +1,81 @@
+<nav class="navbar navbar-expand-md fixed-top navbar-dark self-bg-tertiary">
+    <span class="d-none d-lg-block">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="navbar-brand" href="/about" style="color: black"> Simonka Enikő mentálhigiénikus </a>
+            </li>
+            <li class="nav-item">
+                <i class="fa fa-phone circle self-bg-tertiary"></i>
+            </li>
+            <li class="nav-item">
+                <p></p>
+            </li>
+            <li class="nav-item">
+                <i class="fa fa-envelope circle self-bg-tertiary"></i>
+            </li>
+            <li class="nav-item">
+                <p></p>
+            </li>
+        </ul>
+    </span>
+    <span class="d-lg-none d-xs-block">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="navbar-brand" href="/about" style="color: black"> Simonka Enikő </a>
+            </li>
+        </ul>
+    </span>
+    <span class="d-lg-none d-xs-block">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="fa fa-phone circle self-bg-tertiary" href="tel:"></a>
+            </li>
+        </ul>
+    </span>
+    <span class="d-lg-none d-xs-block">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="fa fa-envelope circle self-bg-tertiary" href="mailto:" ></a>
+            </li>
+        </ul>
+    </span>
+    <button class="navbar-toggler visible-sm btn btn-default btn-sm" type="button" data-toggle="collapse" data-target="#collapsable">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsable">
+        <ul class="navbar-nav ml-auto">
+            {{ if eq .Req.URL.Path "/templates/index.html" }}
+                <li class="nav-item"><a class="nav-link active" href="#folap"> Kezdőlap </a></li>
+                <li class="nav-item"><a class="nav-link" href="/about"> Rólam </a></li>
+                <li class="nav-item"><a class="nav-link" href="#szolgaltatasok"> Szolgáltatások </a></li>
+                <li class="nav-item"><a class="nav-link" href="#kapcsolat"> Kapcsolat </a></li>
+                <li class="nav-item"><a class="nav-link" href="/arak"> Díjazás </a></li>
+                <li class="nav-item"><a class="nav-link" href="/aktualis"> Aktuális </a></li>
+            {{ end }}
+            {{ if eq .Req.URL.Path "/templates/about.html" }}
+                <li class="nav-item"><a class="nav-link" href="/index"> Kezdőlap </a></li>
+                <li class="nav-item"><a class="nav-link active" href="#"> Rólam </a></li>
+                <li class="nav-item"><a class="nav-link" href="/index#szolgaltatasok"> Szolgáltatások </a></li>
+                <li class="nav-item"><a class="nav-link" href="#kapcsolat"> Kapcsolat </a></li>
+                <li class="nav-item"><a class="nav-link" href="/arak"> Díjazás </a></li>
+                <li class="nav-item"><a class="nav-link" href="/aktualis"> Aktuális </a></li>
+            {{ end }}
+            {{ if eq .Req.URL.Path  "/templates/costs.html" }}
+                <li class="nav-item"><a class="nav-link" href="/index"> Kezdőlap </a></li>
+                <li class="nav-item"><a class="nav-link" href="/about"> Rólam </a></li>
+                <li class="nav-item"><a class="nav-link" href="/index#szolgaltatasok"> Szolgáltatások </a></li>
+                <li class="nav-item"><a class="nav-link" href="#kapcsolat"> Kapcsolat </a></li>
+                <li class="nav-item"><a class="nav-link active" href="#"> Díjazás </a></li>
+                <li class="nav-item"><a class="nav-link" href="/aktualis"> Aktuális </a></li>
+            {{ end }}
+            {{ if eq .Req.URL.Path  "/templates/actual.html" }}
+                <li class="nav-item"><a class="nav-link" href="/index"> Kezdőlap </a></li>
+                <li class="nav-item"><a class="nav-link" href="/about"> Rólam </a></li>
+                <li class="nav-item"><a class="nav-link" href="/index#szolgaltatasok"> Szolgáltatások </a></li>
+                <li class="nav-item"><a class="nav-link" href="#kapcsolat"> Kapcsolat </a></li>
+                <li class="nav-item"><a class="nav-link" href="/arak"> Díjazás </a></li>
+                <li class="nav-item"><a class="nav-link active" href="#"> Aktuális </a></li>
+            {{ end }}
+        </ul>
+    </div>
+</nav>

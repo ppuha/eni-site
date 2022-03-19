@@ -1,0 +1,59 @@
+body, html {
+    height: 100%;
+}
+
+.self-color-primary {
+    color: rgba(168, 216, 168, .4)
+}
+
+.self-bg-primary {
+    background-color: rgba(168, 216, 168, .4)
+}
+
+.self-color-secondary {
+    color: white
+}
+
+.self-bg-secondary {
+    background-color: white
+}
+
+.self-color-tertiary {
+    color: rgba(168, 216, 168, 1)
+}
+
+.self-bg-tertiary {
+    background-color: rgba(168, 216, 168, 1)
+}
+
+.self-empty-row-1 {
+    height: 30px;
+}
+
+.self-empty-row-2 {
+    height: 60px;
+}
+
+.self-empty-row-3 {
+    height: 90px;
+}
+
+.nav-link {
+    color: black;
+}
+
+.circle{
+    border-radius: 50%;
+    margin: 0.15em;
+    font-size: 2em;
+    color: #FFFFFF;
+    padding: 0.05em 0.3em;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: black;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: white;
+}

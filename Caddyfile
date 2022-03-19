@@ -1,0 +1,12 @@
+:2015
+
+root * /home/panril/site/eni_site
+
+file_server
+templates
+
+rewrite /* /templates/index.html
+rewrite /index /templates/index.html
+rewrite /about /templates/about.html
+rewrite /arak /templates/costs.html
+rewrite /aktualis /templates/actual.html
