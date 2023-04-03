@@ -1,12 +1,17 @@
-:2015
+:2020 {
 
-root * /home/panril/site/eni_site
+	root * /Users/peterpuha/Code/site
 
-file_server
-templates
+	file_server
+	templates
 
-rewrite /* /templates/index.html
-rewrite /index /templates/index.html
-rewrite /about /templates/about.html
-rewrite /arak /templates/costs.html
-rewrite /aktualis /templates/actual.html
+	rewrite / /templates/index.html
+	rewrite /index /templates/index.html
+	rewrite /about /templates/about.html
+	rewrite /arak /templates/costs.html
+	rewrite /aktualis /templates/actual.html
+
+	log {
+		output file var/log/caddy/access.log
+	}
+}

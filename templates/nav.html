@@ -2,19 +2,26 @@
     <span class="d-none d-lg-block">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="navbar-brand" href="/about" style="color: black"> Simonka Enikő mentálhigiénikus </a>
+                <a class="navbar-brand" href="/about" style="color: black">
+                <div class="row">
+                    <strong>Simonka Enikő</strong>&nbsp;mentálhigiénikus,
+                </div>
+                <div>
+                    relaxációs gyakorlatvezető
+                </div>
+                </a>
             </li>
             <li class="nav-item">
                 <i class="fa fa-phone circle self-bg-tertiary"></i>
             </li>
             <li class="nav-item">
-                <p></p>
+                <p>{{env "TEL"}}</p>
             </li>
             <li class="nav-item">
                 <i class="fa fa-envelope circle self-bg-tertiary"></i>
             </li>
             <li class="nav-item">
-                <p></p>
+                <p>{{env "EMAIL"}}</p>
             </li>
         </ul>
     </span>
