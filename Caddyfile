@@ -1,6 +1,6 @@
 :2020 {
 
-	root * /Users/peterpuha/Code/site
+	root * /
 
 	file_server
 	templates
