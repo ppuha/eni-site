@@ -2,6 +2,23 @@ body, html {
     height: 100%;
 }
 
+#about {
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
 .self-color-primary {
     color: rgba(168, 216, 168, .4)
 }

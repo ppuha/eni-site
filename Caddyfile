@@ -1,5 +1,4 @@
 :2020 {
-
 	root * /
 
 	file_server
@@ -12,6 +11,6 @@
 	rewrite /aktualis /templates/actual.html
 
 	log {
-		output file var/log/caddy/access.log
+		output stdout
 	}
 }
