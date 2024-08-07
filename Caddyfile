@@ -1,6 +1,5 @@
 :2020 {
-
-	root * /
+	root * ./src
 
 	file_server
 	templates
